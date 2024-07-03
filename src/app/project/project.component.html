@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>{{currentProject.title}}</h1>
+  <p>{{currentProject.year}}</p>
+  <div class="images">
+    @for (image of currentProject.images; track currentProject.images;) {
+      <img [src]="image" alt="" (click)="openLightbox($index)">
+    }
+  </div>
+</div>
+
+<app-lightbox [images]="currentProject.images" #lightbox></app-lightbox>

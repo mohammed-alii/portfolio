@@ -1,0 +1,27 @@
+.container {
+  height: 15vh;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    p {
+      color: #ffffff74;
+    }
+    .contact-info {
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        li {
+          padding: 10px;
+          a {
+            img {
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

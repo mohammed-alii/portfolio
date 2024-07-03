@@ -1,0 +1,25 @@
+<div class="container">
+  <a href="">
+    <h1 class="mobile-logo">AHMED NASRUDDIN</h1>
+  </a>
+  <img src="../../assets/images/menu.png" alt="" class="bars" (click)="showSideBar()">
+  <nav [ngClass]="sideBarActive? 'active': '' ">
+    <div class="left-section">
+      <img src="../../assets/images/close.png" alt="" class="close" (click)="closeSideBar()">
+      <a href="" (click)="closeSideBar()">BOOTHS</a>
+      <a routerLink="architecture" (click)="closeSideBar()">ARCHITECTURE</a>
+      <a routerLink="/about" (click)="closeSideBar()">ABOUT & CONTACT</a>
+    </div>
+    <div class="center">
+      <a href=""><h1 routerLink="">AHMED NASRUDDIN</h1></a>
+    </div>
+    <div class="right-section">
+      <a href="https://www.linkedin.com/in/ahmed-nasruddin/" target="_blank">
+        <img src="../../assets/images/linkedin.png" alt="" />
+      </a>
+      <a href="https://www.behance.net/ahmed_nasru" target="_blank">
+        <img src="../../assets/images/behance.png" alt="" />
+      </a>
+    </div>
+  </nav>
+</div>

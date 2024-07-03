@@ -1,0 +1,11 @@
+@if (isOpen) {
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <img [src]="images[currentIndex]" [ngClass]="{'fade-out': fadeOut, 'fade-in': !fadeOut}" alt="Image">
+      <button class="prev" (click)="prevImage()">&#10094;</button>
+      <button class="next" (click)="nextImage()">&#10095;</button>
+      <button class="close" (click)="closeLightbox()">&#10005;</button>
+    </div>
+  </div>
+}
+

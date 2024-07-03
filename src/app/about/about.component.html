@@ -1,0 +1,30 @@
+<div class="summary">
+  <img src="../../assets/images/about-section.png" alt="">
+  <div class="text">
+    <h1>Ahmed Nasruddin</h1>
+    <p>Dedicated 3D Designer with experience in achieving tangible results and cross-team collaboration.</p>
+  </div>
+</div>
+<div class="container">
+  <div class="message">
+    <div class="text">
+      <h1>About Me</h1>
+      <p>Ahmed Nasruddin is a passionate and dedicated 3D Designer with a strong background in architectural visualization and design. <br>
+         With experience working on various projects in Saudi Arabia and Egypt,<br>
+          Ahmed excels in creating detailed and realistic 3D models that bring concepts to life.<br>
+          He is proficient in a range of design software including AutoCAD, 3D Max, Enscape, and more.</p>
+    </div>
+    <div class="form" [formGroup]="messageForm" (ngSubmit)="sendEmail()">
+      <form action="">
+        <div class="h2">SEND ME A MESSAGE</div>
+        <input type="text" placeholder="YOUR NAME..."  formControlName="from_name">
+        <input type="text" placeholder="YOUR EMAIL ADDRESS..." formControlName="form_email">
+        <textarea name="" id="" placeholder="YOUR MESSAGE..." formControlName="message"></textarea>
+        <button>SUBMIT</button>
+        @if (showMessageSent) {
+          <h4>MESSAGE SENT SUCCESSFULLY!</h4>
+        }
+      </form>
+    </div>
+  </div>
+</div>

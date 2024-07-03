@@ -1,0 +1,124 @@
+.container {
+  position: relative;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    h1.mobile-logo {
+      display: none;
+      text-align: center;
+      padding-top: 2vh;
+      cursor: pointer;
+      @media (max-width: 949px) {
+        font-size: 18px;
+      }
+      @media (max-width: 1270px) {
+        display: block;
+      }
+    }
+  }
+  img.bars {
+    display: none;
+    width: 25px;
+    cursor: pointer;
+    @media (max-width: 749px) {
+      display: block;
+      position: absolute;
+      right: 5%;
+      top: 38%;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 0px;
+    @media (max-width: 749px) {
+      padding: 2vh 0px;
+      background-color: #111111;
+      height: 100vh;
+      position: fixed;
+      width: 100vw;
+      left: 0;
+      top: 0;
+      flex-direction: column;
+      display: none;
+      z-index: 1;
+      &.active {
+        display: flex;
+      }
+    }
+  }
+  .left-section {
+    width: 30%;
+    @media (max-width: 749px) {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      position: relative;
+      align-items: center;
+      width: 100%;
+    }
+    img.close {
+      display: none;
+      width: 25px;
+      position: absolute;
+      cursor: pointer;
+      right: 6%;
+      @media (max-width: 749px) {
+        display: block;
+      }
+    }
+    a {
+      text-decoration: none;
+      padding-right: 24px;
+      cursor: pointer;
+      white-space: nowrap;
+      &:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 949px) {
+        font-size: 14px;
+      }
+      @media (max-width: 749px) {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+  }
+  .center {
+    width: 30%;
+    @media (max-width: 1270px) {
+      display: none;
+    }
+    a {
+      h1 {
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+        @media (max-width: 949px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+    a {
+      img {
+        width: 30px;
+        margin-left: 4px;
+      }
+    }
+    @media (max-width: 749px) {
+      width: auto;
+    }
+  }
+}
