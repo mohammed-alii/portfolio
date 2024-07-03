@@ -11,9 +11,9 @@ export class ProjectsService {
   constructor(private http: HttpClient) { }
 
   getBooths(): Observable<project[]> {
-    return this.http.get<project[]>('../../assets/json/booths.json')
+    return this.http.get<project[]>('assets/json/booths.json')
   }
   getArchitecture(): Observable<project[]> {
-    return this.http.get<project[]>('../../assets/json/architecture.json')
+    return this.http.get<project[]>('assets/json/architecture.json')
   }
 }
